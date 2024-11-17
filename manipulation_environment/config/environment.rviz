@@ -81,26 +81,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        hall_floor:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        hall_wall1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        hall_wall2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        hall_wall3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        hall_wall4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         robot1_link1:
           Alpha: 1
           Show Axes: false
@@ -149,6 +129,11 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        shelf_origin:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         vacuum_gripper1_base_link:
           Alpha: 1
           Show Axes: false
@@ -159,16 +144,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        workshop:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         world:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        world_interface:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -180,6 +156,13 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Class: rviz_default_plugins/Axes
+      Enabled: true
+      Length: 1
+      Name: Axes
+      Radius: 0.10000000149011612
+      Reference Frame: <Fixed Frame>
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -241,10 +224,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.47539836168289185
+      Pitch: 0.41539841890335083
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.8404252529144287
+      Yaw: 3.8104238510131836
     Saved: ~
 Window Geometry:
   Displays:
