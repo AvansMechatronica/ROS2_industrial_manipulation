@@ -1,0 +1,25 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    xarm6_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+xarm6_controller:
+  ros__parameters:
+    joints:
+      - robot1_joint1
+      - robot1_joint2
+      - robot1_joint3
+      - robot1_joint4
+      - robot1_joint5
+      - robot1_joint6
+    command_interfaces:
+      []
+    state_interfaces:
+      []

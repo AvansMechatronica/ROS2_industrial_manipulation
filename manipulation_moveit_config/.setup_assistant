@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: manipulation_environment
+    relative_path: urdf/environment.xacro
+  srdf:
+    relative_path: config/manipuation_environment.srdf
+  package_settings:
+    author_name: Gerard Harkema
+    author_email: ga.harkema@avans.nl
+    generated_timestamp: 1731871486

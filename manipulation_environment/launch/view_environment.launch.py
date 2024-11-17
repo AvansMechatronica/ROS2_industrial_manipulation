@@ -10,7 +10,7 @@ def generate_launch_description():
     urdf_file_path = os.path.join(
         get_package_share_directory('manipulation_environment'),
         'urdf',
-        'environment_a.xacro'
+        'environment.xacro'
     )
 
     # Define the path to the RViz configuration file within the package
@@ -44,7 +44,14 @@ def generate_launch_description():
             package='joint_state_publisher_gui',
             executable='joint_state_publisher_gui',
             name='joint_state_publisher_gui',
-            parameters=[{'use_gui': True}]
+            parameters=[{'use_gui': True},
+                        {'zeros.robot1_joint1': 0.0},
+                        {'zeros.robot1_joint2': 0.785},
+                        {'zeros.robot1_joint3': -1.57},
+                        {'zeros.robot1_joint4': 0.0},
+                        {'zeros.robot1_joint5': 0.785},
+                        {'zeros.robot1_joint6': 0.0},         
+            ],
         ),
         
         # RViz Node
