@@ -53,7 +53,7 @@ def launch_setup(context, *args, **kwargs):
     moveit_config = MoveItConfigsBuilder("xarm6_robot", package_name="manipulation_moveit_config").to_moveit_configs()
 
     #xacro_file = LaunchConfiguration('xacro_file', default=PathJoinSubstitution([FindPackageShare('xarm_description'), 'urdf', 'xarm_device.urdf.xacro']))
-    xacro_file = LaunchConfiguration('xacro_file', default=PathJoinSubstitution([FindPackageShare('manipulation_environment'), 'urdf', 'environment.xacro']))
+    xacro_file = LaunchConfiguration('xacro_file', default=PathJoinSubstitution([FindPackageShare('manipulation_environment'), 'urdf', 'environment.urdf.xacro']))
 
 
     # robot ros2 control launch
@@ -151,7 +151,7 @@ def launch_setup(context, *args, **kwargs):
     urdf_file_path = os.path.join(
         get_package_share_directory('manipulation_environment'),
         'urdf',
-        'environment.xacro'
+        'environment.urdf.xacro'
     )
     # Define the robot description using xacro command
     robot_description = Command(['xacro ', urdf_file_path])

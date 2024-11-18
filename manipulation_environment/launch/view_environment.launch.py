@@ -10,7 +10,7 @@ def generate_launch_description():
     urdf_file_path = os.path.join(
         get_package_share_directory('manipulation_environment'),
         'urdf',
-        'environment.xacro'
+        'environment.urdf.xacro'
     )
 
     # Define the path to the RViz configuration file within the package
